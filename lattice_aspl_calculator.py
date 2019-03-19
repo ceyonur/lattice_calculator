@@ -37,9 +37,9 @@ def save_graph(G, name):
 if __name__ == '__main__':
     for i in range(0,5):
         print('***** Run #' + str(i+1) + '*****')
-        n = 2000#random.randint(4, 10) * 10
+        n = random.randint(4, 10) * 10
         print('Number of vertices(n): ' + str(n))
-        k = 9#random.randint(1, max(1,(n/2) - 1))
+        k = random.randint(1, max(1,(n/2) - 1))
         print('Number of neighbours(k): ' + str(k))
         G = make_ring_lattice(n, k)
         #save_graph(G, 'n' + str(n) + 'k' + str(k))
